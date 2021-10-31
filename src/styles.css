@@ -1,0 +1,303 @@
+/* main */
+
+body {
+  background: #0009;
+  color: #fff;
+  text-align: center;
+  font-family: "Meiryo UI";
+  margin: 0;
+}
+
+.prlx_root {
+  perspective: 10px;
+
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+}
+.prlx_root::-webkit-scrollbar {
+  display: none;
+}
+.prlx_cont {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.prlx_front {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.prlx_back {
+  -webkit-transform: translateZ(-10px) scale(3);
+  transform: translateZ(-10px) scale(3);
+  background: url("https://osakana.club/img/header.png");
+  opacity: 50%;
+  height: 200vh;
+}
+.prlx_int {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.img_bak {
+  top: 0;
+  opacity: 50%;
+  width: 100%;
+}
+
+.capt {
+  padding-top: 2em;
+  text-shadow: 0 0 4px black;
+}
+.pr {
+  /*text-align: left;*/
+  text-align: center;
+
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  text-shadow: 0 0 4px black;
+}
+
+.citing {
+  border-left: thick solid #114262;
+  padding-left: 10px;
+  background: #dce6ec;
+  font-style: italic;
+  color: #888;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0, 0.8, 0.8, 1);
+}
+.citing:hover {
+  color: #000;
+}
+.comment {
+  text-align: left;
+  padding: 0.5em 1em;
+}
+.author {
+  text-align: end;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.author:before {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: #aaa;
+  margin: 0 1rem 0 0;
+}
+#moreinfoList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.moreinfo {
+  padding: 2em;
+  flex-grow: 1;
+  max-width: 10em;
+}
+.infoimg img {
+  width: 4em;
+}
+.infocap {
+  font-size: 110%;
+}
+.infodet {
+  font-size: 90%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.infolink a {
+  color: #2196f3;
+}
+
+img {
+  box-shadow: #000a 0 0 5px;
+}
+
+@media screen and (max-width: 480px) {
+  #moreinfoList {
+    display: flex;
+  }
+}
+
+/* ad */
+.ad {
+  position: fixed;
+  left: 0;
+  transition: 0.2s;
+  z-index: 1;
+  width: 100vw;
+  height: 128px;
+  bottom: 0;
+  top: auto;
+  text-align: center;
+}
+.ad-hidden {
+  left: 100vw;
+}
+.ad img {
+  width: 100%;
+  max-width: 480px;
+  height: 100%;
+}
+/* hm */
+/* menu button */
+.menu-btn {
+  position: fixed;
+  top: 0;
+  left: 0; /* or right */
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
+  background-color: #dedede;
+  transition: 0.5s;
+}
+.menu-btn:hover {
+  background: #c5c5c5;
+}
+.menu-btn:active {
+  background: #333;
+}
+/* menu button line */
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background-color: #fff;
+  position: absolute;
+}
+.menu-btn:before {
+  content: "";
+  display: block;
+  background-color: #333;
+  height: 100%;
+  width: 100%;
+  transform: scale(0, 0);
+  transition: 0.3s;
+}
+.menu-btn:hover:before {
+  transform: scale(1, 1);
+}
+.menu-btn span:before {
+  bottom: 8px;
+}
+.menu-btn span:after {
+  top: 8px;
+}
+.menu-btn:hover span:before {
+  width: 30px;
+}
+.menu-btn:hover span:after {
+  width: 20px;
+}
+/* menu button checked */
+#menu-btn-check:checked ~ .menu-btn span {
+  background-color: rgba(255, 255, 255, 0);
+}
+#menu-btn-check:checked ~ .menu-btn span:before {
+  bottom: 0;
+  width: 25px;
+  transform: rotate(-45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span:after {
+  top: 0;
+  width: 25px;
+  transform: rotate(45deg);
+}
+/* button move */
+#menu-btn-check:checked ~ .menu-btn {
+  left: calc(100% - 60px); /* or right */
+  right: 10px; /* or left */
+}
+
+/* checkbox hidden */
+#menu-btn-check {
+  display: none;
+}
+/* menu button trans */
+.menu-btn span:before,
+.menu-btn span:after {
+  transition: 0.2s;
+}
+/* menu contents */
+.menu-content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 100%; /* or left */
+  text-align: right; /* or left */
+  z-index: 80;
+  background-color: #dedede;
+  transition: 0.5s;
+}
+.menu-content-row {
+  z-index: -2;
+  background-color: #c5c5c5;
+  padding-right: 1em; /* or left */
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-right: 1em; /* or left */
+  position: relative;
+  transition: 0.5s;
+}
+.menu-content-row:hover {
+  color: #fff;
+}
+.menu-content-row:before {
+  z-index: -1;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background: #333;
+  transform-origin: center;
+  transform: scale(1, 0);
+  transition: 0.2s;
+}
+.menu-content-row:hover:before {
+  transform: scale(1, 1);
+}
+/* contents slide */
+#menu-btn-check:checked ~ .menu-content {
+  right: 20%; /* or left */
+}
+/* out of menu */
+#menu-cover {
+  height: 100%;
+  width: 100%;
+  background-color: #0000;
+  top: 100%;
+  left: 0; /* or right */
+  position: fixed;
+  z-index: 75;
+  transition: 0.5s;
+}
+#menu-btn-check:checked ~ #menu-cover {
+  background-color: #0005;
+  top: 0;
+}
