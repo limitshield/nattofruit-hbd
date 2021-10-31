@@ -1,5 +1,4 @@
 /* main */
-
 body {
   background: #0009;
   color: #fff;
@@ -284,8 +283,14 @@ img {
 }
 /* contents slide */
 #menu-btn-check:checked ~ .menu-content {
-  right: 20%; /* or left */
+  right: 50%; /* or left */
 }
+@media screen and (max-width: 480px) {
+  #menu-btn-check:checked ~ .menu-content {
+    right: 20%; /* or left */
+  }
+}
+
 /* out of menu */
 #menu-cover {
   height: 100%;

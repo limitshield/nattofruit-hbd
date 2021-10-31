@@ -7,7 +7,17 @@
 .play, .volume{
 	width:3em;
   border-radius: 5px;
+  transition: 0.3s;
 }
+.play:hover, .volume:hover{
+  background-color: #f1ecec;
+  
+}
+
+.volper, .time{
+  min-width: 3em;
+}
+
 .rowAudio{
 	display: flex;
 }
