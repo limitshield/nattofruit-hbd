@@ -5,7 +5,7 @@ import Header from "./Header";
 import Content from "./Content";
 import "./styles.css";
 /* ReactDOMレンダリング */
-
+/* yeah entry point yo */
 ReactDOM.render(
   <StrictMode>
     <Header />
