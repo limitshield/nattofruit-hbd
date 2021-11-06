@@ -1,8 +1,11 @@
 {
-  "name": "react",
+  "name": "nattofruit-hbd",
   "version": "1.0.0",
   "description": "React example starter project",
-  "keywords": ["react", "starter"],
+  "keywords": [
+    "react",
+    "starter"
+  ],
   "main": "src/index.tsx",
   "dependencies": {
     "react": "17.0.2",
@@ -11,7 +14,7 @@
   },
   "devDependencies": {
     "@babel/runtime": "7.13.8",
-    "typescript": "4.1.3"
+    "typescript": "4.0.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -19,5 +22,13 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "repository": "https://github.com/limitshield/nattofruit-hbd.git",
+  "author": "lish <lalalalatias@gmail.com>",
+  "license": "MIT"
 }

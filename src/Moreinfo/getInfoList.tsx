@@ -16,9 +16,9 @@ export default function getInfoList() {
     },
     {
       img: "./assets/test.png",
-      cap: "無料ダウンロード",
-      det: "無料で、合法的にダウンロードすることができます。",
-      link: "#"
+      cap: "問い合わせ",
+      det: "安心の24時間対応で、的確なトラブルシューティングが可能です。",
+      link: "https://twitter.com/UOOSAKANA"
     }
   ];
 }
