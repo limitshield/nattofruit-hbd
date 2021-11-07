@@ -82,7 +82,7 @@ function init(_d, key){
 
 function playFunc(e){
 	let p = e.parentElement.getElementsByClassName("play")[0];
-	console.log(e);
+	//console.log(e);
 	if(e.paused){
 		e.play();
 		/* set play icon */
