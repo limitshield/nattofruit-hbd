@@ -2,7 +2,7 @@
 export default function getInfoList() {
   return [
     {
-      img: "../assets/test.png",
+      img: "./assets/test.png",
       cap: "無料ダウンロード",
       det: "無料で、合法的にダウンロードすることができます。",
       link: "#"
