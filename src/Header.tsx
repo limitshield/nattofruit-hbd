@@ -19,8 +19,7 @@ function HamburgerMenu(props : any) {
       </label>
       <div className="menu-content">
         <MenuContentRow str="HOME" link="http://osakana.club" />
-        <MenuContentRow str="MENU" link="http://osakana.club/404.html" />
-        <MenuContentRow str="ABOUT" link="http://osakana.club/404.html" />
+        <MenuContentRow str="ABOUT" link="https://osakana.club/nafflebirthday/" />
         <MenuContentRow str="DEADSEA" link="http://deadsea.osakana.club" />
       </div>
       <label htmlFor="menu-btn-check" id="menu-cover"></label>
