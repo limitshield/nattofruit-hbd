@@ -60,7 +60,7 @@ function getList() : Array<Block> {
     ),
     new Block(
       "音楽で祝う。",
-      "弊クラブは独自のルートで高品質なサウンドデータを取集しました。そのユーザー・エクスペリエンスを聴覚で感じ取ってください。",
+      "弊クラブは独自のルートで高品質なサウンドデータを取集しました。そのユーザー・エクスペリエンスを聴覚で感じ取ってください。尚、アルバムデータはページ下部で一括ダウンロードが可能です。",
       "music"
     ),
     new Block(
@@ -96,6 +96,6 @@ function TextBlock(props : Block) {
 }
 
 function Footer(props : any) {
-  return <p>footer</p>;
+  return <p>ここにフッターを入力</p>;
 }
 export default Content;

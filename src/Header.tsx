@@ -18,9 +18,10 @@ function HamburgerMenu(props : any) {
         <span></span>
       </label>
       <div className="menu-content">
-        <MenuContentRow str="HOME" link="#" />
-        <MenuContentRow str="MENU" link="#" />
-        <MenuContentRow str="ABOUT" link="#" />
+        <MenuContentRow str="HOME" link="http://osakana.club" />
+        <MenuContentRow str="MENU" link="http://osakana.club/404.html" />
+        <MenuContentRow str="ABOUT" link="http://osakana.club/404.html" />
+        <MenuContentRow str="DEADSEA" link="http://deadsea.osakana.club" />
       </div>
       <label htmlFor="menu-btn-check" id="menu-cover"></label>
     </div>
@@ -34,6 +35,7 @@ function MenuContentRow(props : any) {
       className="menu-content-row"
       onClick={() => {
         console.log("a");
+        location.href = props.link;
       }}
     >
       {props.str}

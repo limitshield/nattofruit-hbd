@@ -12,7 +12,7 @@ export default function getInfoList() {
       cap: "サポート対応",
       det:
         "感想を呟き、編曲者にアピールしましょう。Naffleのサポーターが回答します。",
-      link: "#"
+      link: "https://twitter.com/share?text=%E2%99%A8"
     },
     {
       img: "./assets/test.png",

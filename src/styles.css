@@ -30,11 +30,11 @@ body {
   transform: translateZ(0);
 }
 .prlx_back {
-  -webkit-transform: translateZ(-10px) scale(3);
-  transform: translateZ(-10px) scale(3);
-  background: url("https://osakana.club/img/header.png");
+  -webkit-transform: translateZ(-10px) scale(1);
+  transform: translateZ(-10px) scale(2);
+  background: url("./jacket.png");
   opacity: 50%;
-  height: 400vh;
+  height: 600vh;
 }
 .prlx_int {
   position: absolute;
