@@ -34,7 +34,7 @@ body {
   transform: translateZ(-10px) scale(3);
   background: url("https://osakana.club/img/header.png");
   opacity: 50%;
-  height: 200vh;
+  height: 400vh;
 }
 .prlx_int {
   position: absolute;

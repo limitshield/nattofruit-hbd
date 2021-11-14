@@ -1,7 +1,10 @@
 export default function getMusicList() {
   return [
-    new MusicInfo( "aarock", "aa", "20200329.wav" ),
-    new MusicInfo( "aaajazz", "bb", "20200330.wav" )
+    new MusicInfo( "in the bed all day", "aa", "01 - LimitShield - in the bed all day.mp3" ),
+    new MusicInfo( "honobono0 remix", "", "02 - sanctunes - honobono0 remix.mp3" ),
+    new MusicInfo( "マリン・ポリューション (Asian Rock Remix)", "運命のドツボ", "03 - 運命のドツボ - マリン・ポリューション (Asian Rock Remix).mp3" ),
+    new MusicInfo( "マリン・ポリューション (LimitShield remix)", "LimitShield", "04 - LimitShield - マリン・ポリューション (LimitShield remix).mp3" ),
+    new MusicInfo( "マリン・ポリューション (5h4ru Remix)", "5h4ru", "05 - 5h4ru - マリン・ポリューション (5h4ru Remix).mp3" )
   ];
 }
 
