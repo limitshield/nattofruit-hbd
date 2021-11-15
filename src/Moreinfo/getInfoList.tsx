@@ -5,7 +5,7 @@ export default function getInfoList() {
       img: "./assets/test.png",
       cap: "無料ダウンロード",
       det: "無料で、合法的にダウンロードすることができます。",
-      link: "#"
+      link: "https://www.dropbox.com/sh/w4ug046hi8ymr0o/AADiVoRiZ8U1oPrbQE5aTqVXa?dl=0"
     },
     {
       img: "./assets/test.png",

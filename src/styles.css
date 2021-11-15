@@ -32,7 +32,7 @@ body {
 .prlx_back {
   -webkit-transform: translateZ(-10px) scale(1);
   transform: translateZ(-10px) scale(2);
-  background: url("./jacket.png");
+  background: url("https://osakana.club/2021jacket.png");
   opacity: 50%;
   height: 600vh;
 }
