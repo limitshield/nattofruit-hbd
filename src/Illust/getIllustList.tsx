@@ -1,6 +1,6 @@
 export default function getIllustList() {
   return [
     { title: "jacket", author: "LimitShield", file: "./assets/jacket.png" },
-    { title: "illustration", author: "bb", file: "./assets/test.png" }
+    { title: "asian_rock_jak", author: "hatikiue", file: "./assets/asian_rock_jak.png" }
   ];
 }

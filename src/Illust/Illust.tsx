@@ -4,7 +4,7 @@ export default function Illust(props : any) {
       <style>{"img{width:50%;}"}</style>
       <img src={props.file} alt={props.title} />
       <p>
-        {props.title} - {props.author}
+        {props.title}
       </p>
     </div>
   );
