@@ -33,7 +33,7 @@ body {
   -webkit-transform: translateZ(-10px) scale(1);
   transform: translateZ(-10px) scale(2);
   background: url("https://osakana.club/2021jacket.png");
-  opacity: 50%;
+  opacity: 0.5;
   height: 600vh;
 }
 .prlx_int {
@@ -45,7 +45,7 @@ body {
 }
 .img_bak {
   top: 0;
-  opacity: 50%;
+  opacity: 0.5;
   width: 100%;
 }
 

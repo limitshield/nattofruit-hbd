@@ -2,10 +2,10 @@
   "name": "nattofruit-hbd",
   "version": "1.0.0",
   "homepage": "./",
-  "description": "React example starter project",
+  "description": "Naffle starter project",
   "keywords": [
     "react",
-    "starter"
+    "nattofruit"
   ],
   "main": "src/index.tsx",
   "dependencies": {
